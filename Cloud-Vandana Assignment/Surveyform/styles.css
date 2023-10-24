@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(44, 69, 181);
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: rgba(18, 18, 18, 0.7) 0px 0px 20px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(240, 240, 240);
+    text-shadow: rgba(7, 7, 7, 0.811) 4px 4px 15px;
+}
+
+.name-email {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.name-email label,
+.name-email input {
+    display: block; 
+}
+
+.suggestion {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.suggestion textarea {
+    width: 100%;
+}
+
+.submit button {
+    color: rgb(244, 248, 247);
+    background-color: rgb(27, 90, 117);
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(18, 18, 18, 0.7) 2px 2px 5px;
+}
+.submit button:hover{
+    background-color: black;
+}

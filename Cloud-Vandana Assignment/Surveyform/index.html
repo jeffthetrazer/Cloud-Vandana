@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <div class="container">
+        <form id="surveyForm" onsubmit="submitForm(event)">
+            <div class="name-email">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" required>
+            </div>
+        
+            <div class="name-email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div><br>
+
+            <div class="que1">
+                <p>Is this the first time you are using our products and services?</p>
+                <input type="radio" id="yes1" name="First-time" value="Yes">
+                <label for="yes1">Yes</label>
+                <input type="radio" id="no1" name="First-time" value="No">
+                <label for="no1">No</label>
+            </div>
+            <br>
+            
+            <div class="que2">
+                <p>Would you suggest this to your friends and colleagues?</p>
+                <input type="radio" id="yes2" name="Suggestion" value="Yes">
+                <label for="yes2">Yes</label>
+                <input type="radio" id="no2" name="Suggestion" value="No">
+                <label for="no2">No</label>
+            </div>
+            <br>
+            
+            <div class="que3">
+                <p>How satisfied are you with our company?</p>
+                <input type="radio" id="satisfied" name="Satisfaction" value="Satisfied">
+                <label for="satisfied">Satisfied</label>
+                <input type="radio" id="undecided" name="Satisfaction" value="undecided">
+                <label for="undecided">Undecided</label>
+                <input type="radio" id="unsatisfied" name="Satisfaction" value="unsatisfied">
+                <label for="unsatisfied">Unsatisfied</label>
+            </div>
+            <br>
+            
+            <p>Do you have suggestions to improve our services?</p>
+            <div class="suggestion">
+                <textarea rows="10"></textarea>
+            </div><br>
+
+            <div class="submit">
+                <button type="submit">SUBMIT</button>
+                <button type="button" onclick="resetForm()">RESET</button>
+            </div>
+        </form>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Submitted Values:</h2>
+                <ul id="submittedValues"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
